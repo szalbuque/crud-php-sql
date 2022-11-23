@@ -1,6 +1,5 @@
-CREATE DATABASE cadastro;
-
-CREATE TABLE cadastro.usuarios (
+USE cadastro;
+CREATE TABLE usuarios (
   id              INT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
   nome            VARCHAR(45) NOT NULL,
   email         VARCHAR(255),
