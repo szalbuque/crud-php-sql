@@ -1,7 +1,4 @@
 FROM php:7.4-apache
 COPY . /var/www/html/
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt install php7.4-common/stable -y
-RUN apt install php7.4-mysql/stable -y
-RUN docker-php-ext-install mysqli
+RUN apt-get update && docker-php-ext-install mysqli
+

@@ -7,12 +7,12 @@
     //$conn = new MySQLi(HOST,USER,PASS,BASE);
 
 $host="172.17.0.2";
-$port=3307;
+$port="3306";
 $socket="";
 $user="root";
 $password="12345";
 $dbname="cadastro";
 
-$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
+$conn = new mysqli($host, $user, $password, $dbname, $port, $socket)
 	or die ('Could not connect to the database server' . mysqli_connect_error());
     
