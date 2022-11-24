@@ -4,7 +4,7 @@ Esta aplicação foi criada com base no guia do prof. Eliel Cruz (https://www.yo
 Foi testada usando o XAMPP no Windows 10.
 Ela usa HTML+CSS+JS(Bootstrap)+PHP  e o banco de dados roda em MySQL.
 
-Agora que já está funcionando, vou transformar em dois containers docker, criando as imagens e os containers separadamente.
+Depois que estava funcionando no servidor local, transformei em dois containers docker, criando as imagens e os containers separadamente.
 
 ## Criação das imagens e dos containers
 ### Do banco de dados:
