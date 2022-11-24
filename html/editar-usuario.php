@@ -1,4 +1,4 @@
-<h1>Editar usuário</h1>
+<h1>Editar usuário </h1>
 <?php
     $sql = "SELECT * FROM usuarios WHERE id=".$_REQUEST["id"];
     $res = $conn->query($sql);

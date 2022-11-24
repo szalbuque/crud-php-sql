@@ -65,4 +65,4 @@ Fabrício Veronez DevOps Pro
     =========================
     Corrigi o dockerfile para rodar a atualização e instalação do mysqli.
     Recriei a imagem e o container.
-    Funcionou!
+    Funcionou! 
