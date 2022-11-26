@@ -13,7 +13,7 @@ Para criar a imagem, rodar:
 > docker build -t szalbuque/cadastro-db .  
 
 Para gerar o container com esta imagem, criando o database cadastro, rodar (usei a porta 3307 porque a 3306 já estava sendo usada):
-> docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=12345 -e MYSQL_DATABASE=cadastro -e MYSQL_USER=MainUser -e MYSQL_PASSWORD=MainPassword cadastro-db
+> docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=12345 -e MYSQL_DATABASE=cadastro -e MYSQL_USER=MainUser -e MYSQL_PASSWORD=MainPassword szalbuque/cadastro-db
 
 Para acessar o container e verificar se o banco foi criado, rodar:
 > docker container ps (para pegar o ID do container)
@@ -39,3 +39,8 @@ Para acessar o container e verificar se o banco foi criado, rodar:
 
 ## Para testar a aplicação, acessar este endereço no navegador local:
 http://localhost:8081/
+
+## Criação de uma página de frontend:
+Criada uma pasta /frontend, contendo um arquivo index.html com apenas um botão que direciona para a aplicação backend.
+Este botão deverá direcionar para o IP externo do Load Balancer, quando a aplicação for publicada na nuvem.
+Por enquanto, ele direciona para o endereço local: localhost:8081
